@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Contacto } from 'src/app/interfaces/contacto';
 import { ContactoService } from 'src/app/services/contacto.service';
 
 @Component({
@@ -19,7 +20,7 @@ export class Tab4Page implements OnInit {
     nombre: '',
     correo: '',
     mensaje: ''
-  }
+  };
   constructor(private contactoService: ContactoService) { }
 
   ngOnInit() {
